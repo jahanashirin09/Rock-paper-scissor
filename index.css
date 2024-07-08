@@ -1,0 +1,94 @@
+.container{
+    max-width: 1280px; 
+}
+.sub-container{
+    margin-top:30px;
+    text-align: center;
+}
+.image-container{
+    margin: 150px 100px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.rock-img {
+    width:200px;
+    height:200px;
+    
+}
+.paper-img {
+    width:200px;
+    height:200px;
+}
+.scissor-img {
+    width:200px;
+    height:200px;
+}
+.rock-img-btn, .paper-img-btn ,.scissor-img-btn{
+    border:2px solid black;;
+    background-color: white;
+ 
+}
+.rock-img-btn:hover{
+    background-color: rgb(226, 223, 223);
+}
+.paper-img-btn:hover{
+    background-color: rgb(226, 223, 223);
+}
+.scissor-img-btn:hover{
+    background-color: rgb(226, 223, 223);
+}
+#playerDisplay{
+    font-size: 2rem;
+    text-align: center;
+}
+#computerDisplay{
+    font-size: 2rem;
+    text-align: center;
+}
+#resultDisplay{
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+#playerScoreDisplay{
+    font-size: 2rem;
+    text-align: center;
+}
+#computerScoreDisplay{
+    font-size: 2rem;
+    text-align: center;
+}
+.scoreDisplay{
+    font-size: 2rem;
+    text-align: center;
+}
+.greenText{
+    color: hsl(130, 84%, 54%);
+}
+.redText{
+    color: hsl(0, 84%, 60%);
+}
+.reset {
+    width: 100px;
+    margin-top: 60px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #2b96f3;
+    color: white;
+    margin-left:500px;
+    transition: background-color 0.3s ease;
+}
+    
+
+.reset:hover {
+    background-color:#739fc6;
+}
+.endwinner{
+    font-size: 2rem;
+    text-align: center;
+
+}
