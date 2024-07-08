@@ -67,7 +67,7 @@ function playRound(computerChoice,humanChoice){
         playerScoreDisplay.textContent = playerScore;
     computerScoreDisplay.textContent = computerScore;
     playerDisplay.textContent = 'Your choice: ';
-    computerDisplay.textContent = 'Computer\'s choice: ';
+    computerDisplay.textContent = 'Opposite player choice: ';
     resultDisplay.textContent = '';
     resultDisplay.classList.remove("greenText", "redText");
         endwinner.textContent="YOU WIN THE GAME!!"
@@ -83,7 +83,7 @@ function playRound(computerChoice,humanChoice){
         playerScoreDisplay.textContent = playerScore;
         computerScoreDisplay.textContent = computerScore;
         playerDisplay.textContent = 'Your choice: ';
-        computerDisplay.textContent = 'Computer\'s choice: ';
+        computerDisplay.textContent = 'Opposite player choice: ';
         resultDisplay.textContent = '';
         resultDisplay.classList.remove("greenText", "redText");
 
@@ -103,7 +103,7 @@ document.getElementById('resetButton').addEventListener('click', () => {
     playerScoreDisplay.textContent = playerScore;
     computerScoreDisplay.textContent = computerScore;
     playerDisplay.textContent = 'Your choice: ';
-    computerDisplay.textContent = 'Computer\'s choice: ';
+    computerDisplay.textContent = 'Opposite player choice ';
     resultDisplay.textContent = '';
     resultDisplay.classList.remove("greenText", "redText");
      endwinner.textContent=''
