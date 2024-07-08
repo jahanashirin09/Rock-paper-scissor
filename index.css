@@ -1,4 +1,4 @@
-.container{
+body{
     max-width: 1280px; 
 }
 .sub-container{
@@ -79,7 +79,7 @@
     border-radius: 5px;
     background-color: #2b96f3;
     color: white;
-    margin-left:500px;
+    margin-left:560px;
     transition: background-color 0.3s ease;
 }
     
