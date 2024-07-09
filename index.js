@@ -62,55 +62,37 @@ function playRound(computerChoice,humanChoice){
             break;
     }
     if (playerScore=== limit) {
-        playerScore = 0;
-        computerScore = 0;
-        playerScoreDisplay.textContent = playerScore;
-    computerScoreDisplay.textContent = computerScore;
-    playerDisplay.textContent = 'Your choice: ';
-    computerDisplay.textContent = 'Opposite player choice: ';
-    resultDisplay.textContent = '';
-    resultDisplay.classList.remove("greenText", "redText");
+        
         endwinner.textContent="YOU WIN THE GAME!!"
         endwinner.classList.add("greenText");
-        
-       
-        
-        
+        endDisplay(); 
       }
       else if(computerScore === limit) {
-        playerScore = 0;
-        computerScore = 0;
-        playerScoreDisplay.textContent = playerScore;
-        computerScoreDisplay.textContent = computerScore;
-        playerDisplay.textContent = 'Your choice: ';
-        computerDisplay.textContent = 'Opposite player choice: ';
-        resultDisplay.textContent = '';
-        resultDisplay.classList.remove("greenText", "redText");
-
+            endDisplay();
             endwinner.classList.add("redText");
-        endwinner.textContent="YOU LOSE THE GAME!!"
+            endwinner.textContent="YOU LOSE THE GAME!!"
         
-       
+
       }else{
         endwinner.textContent='';
       }
         
     }
+    function endDisplay(){ 
+        playerScore = 0;
+        computerScore = 0;
+        playerScoreDisplay.textContent = playerScore;
+        computerScoreDisplay.textContent = computerScore;
+        playerDisplay.textContent = 'Your choice: ';
+        computerDisplay.textContent = 'Opposite player choice ';
+        resultDisplay.textContent = '';
+        resultDisplay.classList.remove("greenText", "redText");
+    }
+    function resetting(){
+        endDisplay();
+        endwinner.textContent=''
+    }
 
-document.getElementById('resetButton').addEventListener('click', () => {
-    playerScore = 0;
-    computerScore = 0;
-    playerScoreDisplay.textContent = playerScore;
-    computerScoreDisplay.textContent = computerScore;
-    playerDisplay.textContent = 'Your choice: ';
-    computerDisplay.textContent = 'Opposite player choice ';
-    resultDisplay.textContent = '';
-    resultDisplay.classList.remove("greenText", "redText");
-     endwinner.textContent=''
-        
-
-        
-
-});
-
+    
+    
 
